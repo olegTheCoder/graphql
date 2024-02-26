@@ -30,6 +30,10 @@ input PostInput {
 type Query {
     getAllUsers: [User]
     getUser(id: ID): User
+}
+
+type Mutation {
+    createUser(input: UserInput): User
 }`);
 
 module.exports = schema;

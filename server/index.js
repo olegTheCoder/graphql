@@ -18,7 +18,12 @@ const root = {
     return users;
   },
   getUser: ({ id }) => {
-    return users.find((user) => user.id === id);
+    return users.find((user) => user.id === Number(id));
+  },
+  createUser: ({ input }) => {
+    const newUser = { id: Date.now(), ...input };
+    users.push(newUser);
+    return newUser;
   },
 };
 
