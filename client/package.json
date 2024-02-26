@@ -4,8 +4,8 @@
   "description": "Pet-project GraphQL",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "node dist/main.js"
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production"
   },
   "keywords": [],
   "author": "Oleg Grachev",
