@@ -53,7 +53,7 @@ export default (env: EnvType) => {
       ],
     },
     resolve: {
-      extensions: ['.tsx', '.ts', '.jsx', '.js'],
+      extensions: ['.tsx', '.ts', '.jsx', '.js', '.css'],
     },
     plugins: [
       new MiniCssExtractPlugin(),
