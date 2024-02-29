@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./dist/",
@@ -10,7 +11,8 @@
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": false
   },
   "ts-node": {
     "compilerOptions": {
