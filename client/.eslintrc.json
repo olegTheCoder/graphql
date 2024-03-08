@@ -26,6 +26,21 @@
   "rules": {
     "require-jsdoc": "off",
     "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/ban-types": "off"
+    "@typescript-eslint/ban-types": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "index",
+          "sibling",
+          "parent",
+          "internal",
+          "external",
+          "builtin",
+          "object",
+          "type"
+        ]
+      }
+    ]
   }
 }

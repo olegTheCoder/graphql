@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import { Button } from "./Button/Button"
+import { Button } from './Button';
 import { GET_ALL_USERS } from '../query/user';
 import { useQuery } from '@apollo/client';
 
@@ -20,8 +20,8 @@ export const App = () => {
       <form>
         <input type="text" placeholder="text" />
         <input type="number" placeholder="number" />
-        {/* <Button name="CREATE" onClick={}/>
-          <Button name="GET" onClick={}/> */}
+        {/* <Button name="CREATE" onClick={} />
+        <Button name="GET" onClick={} /> */}
       </form>
       <div>
         {users.map((el) => (
